@@ -15,21 +15,20 @@ import aos from 'aos/dist/aos.css';
 
 import Header from "~/components/Header";
 import styles from "./styles/tailwind.css";
-import globalStyles from "./styles/global.css";
 import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
-  { rel: "stylesheet", href: globalStyles },
   { rel: "stylesheet", href: aos },
   { rel: "icon", href: "/favicon.ico"}
 ];
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "Diem Quynh Seafoods",
+  title: "DiemQuynh Seafoods",
+  description: "DiemquynhSeafoods Co., Ltd specializes in producing, exporting and distributing high quality dried and frozen seafood items",
   viewport: "width=device-width,initial-scale=1",
 
 });

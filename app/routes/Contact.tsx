@@ -5,7 +5,7 @@ function Contact() {
     return (
       <div className='text-white'>
       <div style={{
-          backgroundImage: "url('https://templatekit.jegtheme.com/fiqua/wp-content/uploads/sites/179/2021/10/high-angle-close-up-of-barramundi-on-ice-ready-to-be-cut-into-portions--e1634221588904.jpg')",
+          backgroundImage: "url('/barramundi-on-ice.jpeg')",
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center center',
           backgroundSize: 'cover'

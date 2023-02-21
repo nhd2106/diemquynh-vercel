@@ -8,7 +8,7 @@ function About() {
     return (
       <div className="text-white">
         <div style={{
-          backgroundImage: "url('https://templatekit.jegtheme.com/fiqua/wp-content/uploads/sites/179/2021/10/fish-farm-for-brooding-sturgeons-in-astrakhan-russia-e1634221713578.jpg')",
+          backgroundImage: "url('/fish-farm.jpeg')",
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center center',
           backgroundSize: 'cover'
