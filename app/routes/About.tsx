@@ -24,7 +24,7 @@ function About() {
 <section className="bg-black ">
         <div
           style={{
-            backgroundImage: "url('/bg-blur-blue2.png')",
+            backgroundImage: "url('/bg-blur-blue2.webp')",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center center",
             backgroundSize: "cover",
@@ -78,7 +78,7 @@ function About() {
         </div>
         <div
           style={{
-            backgroundImage: "url('/bg-blur-3-2.png')",
+            backgroundImage: "url('/bg-blur-3-2.webp')",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center center",
             backgroundSize: "cover",

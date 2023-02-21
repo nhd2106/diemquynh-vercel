@@ -89,7 +89,7 @@ export default function Header() {
                       <span className="sr-only">DiemQuynhSeafoods</span>
                       <img
                         className="h-14  w-auto"
-                        src="/DIQ_logo.png"
+                        src="/DIQ_logo.webp"
                         alt="logo"
                       />
                     </NavLink>
@@ -129,7 +129,7 @@ export default function Header() {
                   <NavLink to="/" className="lg:hidden bg-white rounded-full">
                     <span className="sr-only">DiemQuynhSeafoods</span>
                     <img
-                      src="/DIQ_logo.png"
+                      src="/DIQ_logo.webp"
                       alt="logo"
                       className="h-14 w-auto"
                     />
