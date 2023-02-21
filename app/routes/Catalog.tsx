@@ -3,7 +3,7 @@ function  Catalog() {
   return (
     <div className="text-white">
       <div style={{
-        backgroundImage: "url('/fish-farm.jpeg')",
+        backgroundImage: "url('/fish-farm.webp')",
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center center',
         backgroundSize: 'cover'

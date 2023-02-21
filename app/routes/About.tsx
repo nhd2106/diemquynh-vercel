@@ -8,7 +8,7 @@ function About() {
     return (
       <div className="text-white">
         <div style={{
-          backgroundImage: "url('/fish-farm.jpeg')",
+          backgroundImage: "url('/fish-farm.webp')",
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center center',
           backgroundSize: 'cover'
@@ -54,7 +54,7 @@ function About() {
               <div className="w-1/2 h-full">
                 <img
                   className="h-full w-full"
-                  src="https://templatekit.jegtheme.com/fiqua/wp-content/uploads/sites/179/2021/10/fish-on-a-fish-market-e1634221404337.jpg"
+                  src="fish-on-a-fish-market.webp"
                   alt="count-img"
                 />
               </div>
@@ -88,7 +88,7 @@ function About() {
             <div className="md:w-1/2 ">
               <div>
                 <img
-                  src="https://templatekit.jegtheme.com/fiqua/wp-content/uploads/sites/179/2021/10/fish-fresh-sea-bream-raw-dorado-fish-e1634221443191.jpg"
+                  src="/raw-dorado-fish.webp"
                   alt="img-fish-center"
                 />
               </div>
@@ -102,7 +102,7 @@ function About() {
                     objectFit: "cover",
                     height: "500px",
                   }}
-                  src="/fisher_man.jpeg"
+                  src="/fisher_man.webp"
                   alt="fisher-man"
                 />
               </div>

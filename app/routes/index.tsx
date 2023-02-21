@@ -12,7 +12,7 @@ export default function Home() {
     <div className="text-white">
       <div
         style={{
-          backgroundImage: "url('/main_background.jpeg')",
+          backgroundImage: "url('/main_background.webp')",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center center",
           backgroundSize: "cover",
@@ -136,7 +136,7 @@ export default function Home() {
               <div className="w-1/2 h-full">
                 <img
                   className="h-full w-full"
-                  src="https://templatekit.jegtheme.com/fiqua/wp-content/uploads/sites/179/2021/10/fish-on-a-fish-market-e1634221404337.jpg"
+                  src="/fish-on-a-fish-market.webp"
                   alt="count-img"
                 />
               </div>
@@ -170,7 +170,7 @@ export default function Home() {
             <div className="md:w-1/2 ">
               <div>
                 <img
-                  src="https://templatekit.jegtheme.com/fiqua/wp-content/uploads/sites/179/2021/10/fish-fresh-sea-bream-raw-dorado-fish-e1634221443191.jpg"
+                  src="/red-meat-of-raw-fish.webp"
                   alt="img-fish-center"
                 />
               </div>
@@ -184,7 +184,7 @@ export default function Home() {
                     objectFit: "cover",
                     height: "500px",
                   }}
-                  src="/fisher_man.jpeg"
+                  src="/fisher_man.webp"
                   alt="fisher-man"
                 />
               </div>
@@ -254,7 +254,7 @@ export default function Home() {
         className="relative"
         style={{
           backgroundImage:
-            "url('https://templatekit.jegtheme.com/fiqua/wp-content/uploads/sites/179/2021/10/farm-salmon-fishing-aerial-fpv-drone-photography--e1634221501867.jpg')",
+            "url('/farm-salmon-fishing-aerial-fpv-drone-photography.webp')",
           backgroundPosition: "center center",
           backgroundSize: "cover",
           padding: "180px 0 180px 0",
@@ -312,17 +312,17 @@ export default function Home() {
           {[
             {
               imageUrl:
-                "https://templatekit.jegtheme.com/fiqua/wp-content/uploads/sites/179/2021/10/red-meat-of-raw-fish-e1634221518834.jpg",
+                "/red-meat-of-raw-fish.webp",
                 productName: 'Barramundi'
             },
             {
               imageUrl:
-                "https://templatekit.jegtheme.com/fiqua/wp-content/uploads/sites/179/2021/10/red-meat-of-raw-fish-e1634221518834.jpg",
+                "/red-meat-of-raw-fish.webp",
                 productName: 'Grouper Fillet'
             },
             {
               imageUrl:
-                "https://templatekit.jegtheme.com/fiqua/wp-content/uploads/sites/179/2021/10/red-meat-of-raw-fish-e1634221518834.jpg",
+                "/red-meat-of-raw-fish.webp",
                 productName: 'Red Barramundi'
             },
           ].map(({ imageUrl, productName }, index) => (
@@ -346,7 +346,7 @@ export default function Home() {
           <img className="object-cover w-full" style={{
             height: '500px',
             filter: "brightness( 67% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg )"
-          }} src="https://templatekit.jegtheme.com/fiqua/wp-content/uploads/sites/179/2021/10/high-angle-close-up-of-barramundi-on-ice-ready-to-be-cut-into-portions--e1634221588904.jpg" alt="barrmundi" />
+          }} src="barramundi-on-ice.webp" alt="barrmundi" />
         </div>
       </div>
       </div>

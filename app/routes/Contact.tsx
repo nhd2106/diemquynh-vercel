@@ -5,7 +5,7 @@ function Contact() {
     return (
       <div className='text-white'>
       <div style={{
-          backgroundImage: "url('/barramundi-on-ice.jpeg')",
+          backgroundImage: "url('/barramundi-on-ice.webp')",
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center center',
           backgroundSize: 'cover'
