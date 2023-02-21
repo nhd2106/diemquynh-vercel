@@ -65,7 +65,7 @@ export default function Header() {
               <div className="border-t border-gray-200 py-6 px-4 space-y-6">
                 {navigation.pages.map((page) => (
                   <div key={page.name} className="flow-root">
-                    <NavLink to={page.href} className={({ isActive}) => classNames("-m-2 p-2 block font-medium text-white", isActive ? "text-blue-400 underline" :"")}>
+                    <NavLink to={page.href} onClick={() => setOpen(false)} className={({ isActive}) => classNames("-m-2 p-2 block font-medium text-white", isActive ? "text-blue-400 underline" :"")}>
                       {page.name}
                     </NavLink>
                   </div>
