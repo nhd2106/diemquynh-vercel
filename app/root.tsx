@@ -61,7 +61,7 @@ export default function App() {
     document.addEventListener("scroll", function (e) {
       toggleVisibility();
     });
-  },[])
+  },[]);
 
  
   return (

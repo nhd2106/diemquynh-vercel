@@ -22,7 +22,7 @@ function  Catalog() {
 
       </div>
     </div>
-  )
+  );
 }
 
 

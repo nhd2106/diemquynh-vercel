@@ -125,7 +125,7 @@ function Contact() {
     </div>
         </div>
 
-    )
+    );
   }
   
   

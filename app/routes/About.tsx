@@ -163,7 +163,7 @@ function About() {
       </section>
       </div>
       
-    )
+    );
   }
   
   

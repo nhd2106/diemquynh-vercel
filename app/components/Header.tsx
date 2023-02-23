@@ -1,9 +1,8 @@
-
-import { Fragment, useState } from 'react'
+import { Fragment, useState } from 'react';
 import { NavLink } from '@remix-run/react';
-import { Dialog, Popover, Transition } from '@headlessui/react'
-import { Bars2Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { classNames } from '~/helper'
+import { Dialog, Popover, Transition } from '@headlessui/react';
+import { Bars2Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { classNames } from '~/helper';
 
 const navigation = {
   pages: [
@@ -17,7 +16,7 @@ const navigation = {
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
   ],
-}
+};
 
 
 
@@ -143,5 +142,5 @@ export default function Header() {
         </nav>
       </header>
     </div>
-  )
+  );
 }

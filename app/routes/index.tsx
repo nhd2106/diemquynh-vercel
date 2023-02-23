@@ -1,6 +1,6 @@
 import { useNavigate, Link } from "@remix-run/react";
 import { ArrowRightIcon, CheckIcon } from "@heroicons/react/24/outline";
-import CountUp from 'react-countup'
+import CountUp from 'react-countup';
 
 import LeafIcon from "~/utils/leafIcon";
 import FishIcon from "~/utils/FishIcon";

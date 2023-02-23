@@ -1,5 +1,3 @@
-
-
 function FishIcon({ size, color }: {size : number, color?: string}) {
   return (
     <svg width={`${size * 10}px`} height={`${size * 10}px`} viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -12,8 +10,8 @@ function FishIcon({ size, color }: {size : number, color?: string}) {
 </path>
     </g>
 </svg>
-  )
+  );
 }
 
 
-export default FishIcon
+export default FishIcon;

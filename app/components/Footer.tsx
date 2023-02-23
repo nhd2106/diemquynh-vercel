@@ -1,5 +1,5 @@
 import { Link } from "@remix-run/react";
-import { PhoneIcon, EnvelopeIcon, MapPinIcon} from '@heroicons/react/24/outline'
+import { PhoneIcon, EnvelopeIcon, MapPinIcon} from '@heroicons/react/24/outline';
 
 const navigation = {
     links: [
@@ -51,7 +51,7 @@ const navigation = {
         ),
       },
     ],
-  }
+  };
 
 function Footer() {
     return (
@@ -158,8 +158,8 @@ function Footer() {
         </div>
       </div>
     </footer>
-    )
+    );
 }
 
 
-export default Footer
+export default Footer;
