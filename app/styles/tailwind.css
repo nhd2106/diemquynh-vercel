@@ -1614,6 +1614,11 @@ body {
     margin-right: 2.5rem;
   }
 
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .md\:-ml-\[20\%\] {
     margin-left: -20%;
   }
@@ -1692,6 +1697,10 @@ body {
 
   .md\:w-10 {
     width: 2.5rem;
+  }
+
+  .md\:w-2\/3 {
+    width: 66.666667%;
   }
 
   .md\:max-w-7xl {
