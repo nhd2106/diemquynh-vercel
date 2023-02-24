@@ -1,5 +1,3 @@
-
-
 function CustomerIcon({ size, color }: {size : number, color?: string}) {
     const fill = color || "#0F1F3C";
     return (

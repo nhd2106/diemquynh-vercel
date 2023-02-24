@@ -18,7 +18,8 @@ function About() {
           </div>
          <div className="w-1/3 flex flex-col md:ml-20 z-10 relative">
          <h1 className="text-3xl mb-5">About Us</h1>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus soluta distinctio fuga doloremque odio blanditiis excepturi totam vero ea, facilis laudantium nesciunt enim nostrum alias explicabo eius, quam quis? Enim?</p>
+         <p>DiemQuynhSeafoods is a family company specializing many kinds of fishes: Red Snapper, Red Mullet, Grouper, Barramundi, Emperor, Parrot, King Snapper, White Snapper, Sweeplip, Mahi Mahi, Pomfret, Leather Jacket, Ribbonfish, Black Tilapia, Red Tilapia, Octopus, Cuttlefish, Loligo Squids ...
+We have established for 10 years in order to keep a stable quality, a reasonable price and a full responsibility for all final buyers...</p>
          </div>
         </div>
 <section className="bg-black ">

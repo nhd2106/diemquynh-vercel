@@ -59,10 +59,10 @@ function Footer() {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <div className="md:max-w-7xl mx-auto py-12 px-4 sm:px-2 md:py-16 md:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="grid grid-cols-2 gap-8 xl:col-span-2">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
+          <div className="md:grid grid-cols-2 md:gap-8 xl:col-span-2">
+            <div className="grid grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">links</h3>
                 <ul  className="mt-4 space-y-4">
@@ -75,7 +75,7 @@ function Footer() {
                   ))}
                 </ul>
               </div>
-              <div className="mt-12 md:mt-0">
+              <div className="">
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Support</h3>
                 <ul className="mt-4 space-y-4">
                   {navigation.support.map((item) => (
@@ -88,12 +88,12 @@ function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
+            <div className="md:grid md:grid-cols-2 md:gap-8 mt-10 md:mt-0">
               <div>
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Contact Info</h3>
                 <ul className="mt-4 space-y-4 text-white">
                   <li className="flex space-x-2">
-                    <MapPinIcon className="h-10 w-10"/>
+                    <MapPinIcon className="h-7 w-7 md:h-10 md:w-10"/>
                     <span>44 Tay Son St, Tan Quy ward, Tan Phu Dist, HCMC, Vietnam.</span>
                   </li>
                   <li className="flex space-x-2">
@@ -101,7 +101,7 @@ function Footer() {
                     <span>+84 0908.13.63.59</span>
                   </li>
                   <li className="flex space-x-2 items-center">
-                    <EnvelopeIcon className="h-10 w-10"/>
+                    <EnvelopeIcon className="h-5 w-5 md:w-10 md:h-10" />
                     <span>info@diemquynhseafoods.com</span>
                   </li>
                 </ul>

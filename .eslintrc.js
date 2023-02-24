@@ -6,5 +6,6 @@ module.exports = {
     "no-restricted-globals": "warn",
     "no-unused-vars": "off",
     semi: ["error", "always"],
+    "react/jsx-no-comment-textnodes": 0,
   },
 };
