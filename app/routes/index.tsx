@@ -142,12 +142,12 @@ export default function Home() {
             <div className="md:flex md:space-x-10 h-72">
               <div className="md:w-1/2 h-full">
                 <img
-                  className="h-full w-full"
+                  className="h-full w-full object-cover"
                   src="/fish-on-a-fish-market.webp"
                   alt="count-img"
                 />
               </div>
-              <div className="md:flex w-full md:w-1/2 md:space-x-10 mt-5 justify-around">
+              <div className="md:flex w-full md:w-1/2 md:space-x-10 mt-5 md:mt-0 justify-around">
                 <div className="bg-blue-300 md:w-1/2 md:flex justify-start items-center md:pl-10 mb-5 py-10 md:py-0 md:mb-0 ">
                   <div className="space-y-2 flex items-center justify-around md:block">
                     <FishIcon size={10} color="white" />
@@ -186,7 +186,7 @@ export default function Home() {
           <div className="md:flex justify-center mx-3 md:mx-10">
             <div className="md:w-1/2 ">
               <div>
-                <img src="/red-meat-of-raw-fish.webp" alt="img-fish-center" />
+                <img className="object-contain" src="/red-meat-of-raw-fish.webp" alt="img-fish-center" />
               </div>
               <div className="md:-mt-[50%]">
                 <img
