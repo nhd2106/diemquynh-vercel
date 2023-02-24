@@ -1,10 +1,11 @@
 import { CheckIcon } from "@heroicons/react/24/outline";
-import { Link } from "@remix-run/react";
+import { Link, useNavigate } from "@remix-run/react";
 import  CountUp from "react-countup";
 import CustomerIcon from "~/utils/CustomerIcon";
 import FishIcon from "~/utils/FishIcon";
 
 function About() {
+  const navigate = useNavigate();
     return (
       <div className="text-white">
         <div style={{
