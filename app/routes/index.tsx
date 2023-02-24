@@ -17,7 +17,7 @@ export default function Home() {
           backgroundPosition: "center center",
           backgroundSize: "cover",
         }}
-        className="py-96"
+        className="pt-96 pb-36"
       >
         <div className="bg-black opacity-50 absolute top-0 left-0 h-full w-full" />
         <div className="relative z-10 text-white">

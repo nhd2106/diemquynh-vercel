@@ -1,29 +1,37 @@
 import { CheckIcon } from "@heroicons/react/24/outline";
 import { Link, useNavigate } from "@remix-run/react";
-import  CountUp from "react-countup";
+import CountUp from "react-countup";
 import CustomerIcon from "~/utils/CustomerIcon";
 import FishIcon from "~/utils/FishIcon";
 
 function About() {
   const navigate = useNavigate();
-    return (
-      <div className="text-white">
-        <div style={{
+  return (
+    <div className="text-white">
+      <div
+        style={{
           backgroundImage: "url('/fish-farm.webp')",
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center center',
-          backgroundSize: 'cover'
-        }} className="py-64 relative">
-          <div className="bg-black opacity-50 absolute top-0 left-0 h-full w-full">
-    
-          </div>
-         <div className="md:w-2/5 mx-5 md:mx-0 flex flex-col md:ml-20 z-10 relative">
-         <h1 className="text-3xl mb-5">About Us</h1>
-         <p>DiemQuynhSeafoods is a family company specializing many kinds of fishes: Red Snapper, Red Mullet, Grouper, Barramundi, Emperor, Parrot, King Snapper, White Snapper, Sweeplip, Mahi Mahi, Pomfret, Leather Jacket, Ribbonfish, Black Tilapia, Red Tilapia, Octopus, Cuttlefish, Loligo Squids ...
-We have established for 10 years in order to keep a stable quality, a reasonable price and a full responsibility for all final buyers...</p>
-         </div>
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center center",
+          backgroundSize: "cover",
+        }}
+        className="py-64 relative"
+      >
+        <div className="bg-black opacity-50 absolute top-0 left-0 h-full w-full"></div>
+        <div className="md:w-2/5 mx-5 md:mx-0 flex flex-col md:ml-20 z-10 relative">
+          <h1 className="text-3xl mb-5">About Us</h1>
+          <p>
+            DiemQuynhSeafoods is a family company specializing many kinds of
+            fishes: Red Snapper, Red Mullet, Grouper, Barramundi, Emperor,
+            Parrot, King Snapper, White Snapper, Sweeplip, Mahi Mahi, Pomfret,
+            Leather Jacket, Ribbonfish, Black Tilapia, Red Tilapia, Octopus,
+            Cuttlefish, Loligo Squids ... We have established for 10 years in
+            order to keep a stable quality, a reasonable price and a full
+            responsibility for all final buyers...
+          </p>
         </div>
-        <section className="bg-black">
+      </div>
+      <section className="bg-black">
         <div
           style={{
             backgroundImage: "url('/bg-blur-blue2.webp')",
@@ -126,8 +134,14 @@ We have established for 10 years in order to keep a stable quality, a reasonable
                     WE PRODUCE THE BEST QUALITY SEA PRODUCT
                   </h3>
                   <p className="text-gray-400">
-                  DiemQuynhSeafoods is a family company specializing many kinds of fishes: Red Snapper, Red Mullet, Grouper, Barramundi, Emperor, Parrot, King Snapper, White Snapper, Sweeplip, Mahi Mahi, Pomfret, Leather Jacket, Ribbonfish, Black Tilapia, Red Tilapia, Octopus, Cuttlefish, Loligo Squids ...
-We have established for 10 years in order to keep a stable quality, a reasonable price and a full responsibility for all final buyers...
+                    DiemQuynhSeafoods is a family company specializing many
+                    kinds of fishes: Red Snapper, Red Mullet, Grouper,
+                    Barramundi, Emperor, Parrot, King Snapper, White Snapper,
+                    Sweeplip, Mahi Mahi, Pomfret, Leather Jacket, Ribbonfish,
+                    Black Tilapia, Red Tilapia, Octopus, Cuttlefish, Loligo
+                    Squids ... We have established for 10 years in order to keep
+                    a stable quality, a reasonable price and a full
+                    responsibility for all final buyers...
                   </p>
                   <div className="flex space-x-5">
                     <ul>
@@ -171,11 +185,8 @@ We have established for 10 years in order to keep a stable quality, a reasonable
           </div>
         </div>
       </section>
-      </div>
-      
-    );
-  }
-  
-  
-  export default About;
-  
+    </div>
+  );
+}
+
+export default About;
