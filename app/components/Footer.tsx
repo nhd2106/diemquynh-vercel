@@ -186,7 +186,7 @@ function Footer() {
           target="_blank"
           className="mt-2 text-base md:text-left text-center text-gray-400 md:mt-2 md:order-1"
         >
-          Develop by duoc95.com
+          Developed by duoc95.com
         </Link>
       </div>
     </footer>
