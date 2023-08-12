@@ -33,8 +33,12 @@ function Contact() {
                 Get in touch
               </h2>
               <p className="mt-3 text-lg leading-6 text-gray-500">
-                Nullam risus blandit ac aliquam justo ipsum. Quam mauris
-                volutpat massa dictumst amet. Sapien tortor lacus arcu.
+                Got questions about our seafood exports? We're here to help!
+                Whether it's Barramundi, Grouper, Red Snapper, or any other
+                exquisite seafood, we're ready to provide all the info you need.
+                Reach out through the contact form, email, or phone number
+                provided. Let's make your seafood experience exceptional
+                together. Get in touch today!
               </p>
               <dl className="mt-8 text-base text-gray-500">
                 <div>

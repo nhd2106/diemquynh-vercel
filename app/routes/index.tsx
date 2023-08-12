@@ -29,10 +29,15 @@ export default function Home() {
               FRESH FISH DELIVERED FOR YOU
             </h1>
             <p data-aos="fade-left" className="w-3/4 md:w-2/5 text-center">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              magni aperiam architecto eveniet? Voluptatibus quaerat libero a
-              incidunt esse. Facilis illo ullam ut beatae quae quaerat neque
-              repellendus fugiat quasi.
+              Welcome to {companyName}! We specialize in exporting top-quality
+              seafood, including Barramundi, Grouper, Red Snapper, Red Spot
+              Emperor, King Snapper, Goldband Snapper, Crimson Snapper, Mahi
+              Mahi, and Parrotfish. Our products are sourced from pristine
+              waters, ensuring freshness and premium taste. Whether you're a
+              seafood lover, chef, or consumer, we offer a diverse range of
+              delectable options to satisfy your palate. Explore our sustainable
+              seafood collection and experience the ocean's finest flavors,
+              responsibly sourced and delivered to your table.
             </p>
             <div className="space-x-5 mt-5">
               <button

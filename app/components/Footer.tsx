@@ -7,14 +7,14 @@ import {
 
 const navigation = {
   links: [
-    { name: "Home", href: "#" },
-    { name: "Catalog", href: "#" },
-    { name: "Contact", href: "#" },
-    { name: "About Us", href: "#" },
+    { name: "Home", href: "/" },
+    { name: "Catalog", href: "/catalog" },
+    { name: "Contact", href: "/contact" },
+    { name: "About Us", href: "/about" },
   ],
   support: [
-    { name: "Get Quote", href: "#" },
-    { name: "FAQ", href: "#" },
+    { name: "Get Quote", href: "/" },
+    { name: "FAQ", href: "/" },
     //   { name: 'Guides', href: '#' },
     //   { name: 'API Status', href: '#' },
   ],

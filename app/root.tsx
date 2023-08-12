@@ -32,11 +32,13 @@ export const meta: MetaFunction = (context) => {
   return {
     charset: "utf-8",
     title: context?.data?.title ?? "DiemQuynh Seafoods",
-    description: `${context?.data.companyName} Co., Ltd specializes in producing, exporting and distributing high quality dried and frozen seafood items`,
+    description: `${context?.data.companyName} Co., Ltd  is a leading exporter of fresh and frozen seafood from Vietnam. We offer a wide range of high-quality seafood products, including shrimp, crab, lobster, clams, oysters, scallops, squid, octopus, tuna, salmon, and more. Contact us today to learn more about our products and services.`,
     viewport: "width=device-width,initial-scale=1",
-    "og:title": context?.data?.title ?? "DiemQuynh Seafoods",
+    keywords: `${context?.data.keywords}`,
+    "og:title": context?.data?.ogTitle ?? "DiemQuynh Seafoods",
     "og:description": `${context?.data.companyName} Co., Ltd specializes in producing, exporting and distributing high quality dried and frozen seafood items`,
     "og:image": `https://${context?.data.domain}/${context?.data.logo}`,
+    "og:url": `https://${context?.data.domain}`,
   };
 };
 
@@ -47,7 +49,13 @@ export const loader: LoaderFunction = async (context) => {
   const domain = isDQ ? "diemquynhseafoods.com" : "vanthinhseafoods.com";
   const companyName = isDQ ? "DiemQuynhSeafoods" : "VanThinhSeafoods";
   const title = isDQ ? "DiemQuynh Seafoods" : "VanThinh Seafoods";
-  return json({ logo, domain, companyName, title });
+  const ogTitle = `${
+    isDQ ? "DiemQuynh Seafood " : "Van Thinh Seafood "
+  } - Exporter of Fresh and Frozen Seafood from Vietnam`;
+  const keywords = `${
+    isDQ ? "Van Thinh Seafood" : "Diemquynh Seafood"
+  }, seafood export Vietnam, seafood supplier Vietnam, shrimp export Vietnam, crab export Vietnam, lobster export Vietnam, clams export Vietnam, oysters export Vietnam, scallops export Vietnam, squid export Vietnam, octopus export Vietnam, tuna export Vietnam, salmon export Vietnam, barramundi export Vietnam, mahi-mahi export Vietnam, swordfish export Vietnam, tilapia export Vietnam, cod export Vietnam, haddock export Vietnam, halibut export Vietnam, sardines export Vietnam, anchovies export Vietnam, mackerel export Vietnam, herring export Vietnam, caviar export Vietnam, frozen seafood Vietnam, dried seafood Vietnam`;
+  return json({ logo, domain, companyName, title, keywords, ogTitle });
 };
 
 export default function App() {
