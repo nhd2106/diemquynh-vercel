@@ -1,33 +1,44 @@
-import { Fragment, useState } from 'react';
-import { NavLink } from '@remix-run/react';
-import { Dialog, Popover, Transition } from '@headlessui/react';
-import { Bars2Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { classNames } from '~/helper';
+import { Fragment, useState } from "react";
+import { NavLink } from "@remix-run/react";
+import { Dialog, Popover, Transition } from "@headlessui/react";
+import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { classNames } from "~/helper";
 
 const navigation = {
   pages: [
     {
-      name: 'Home', href: "/"
+      name: "Home",
+      href: "/",
     },
     {
-      name: 'Catalog', href: "/catalog"
-     
+      name: "Catalog",
+      href: "/catalog",
     },
-    { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
   ],
 };
 
-
-
-export default function Header() {
+export default function Header({
+  domain = "",
+  logo = "",
+  companyName = "DiemQuynhSeafoods",
+}: {
+  domain: string;
+  logo: string;
+  companyName: string;
+}) {
   const [open, setOpen] = useState(false);
 
   return (
     <div className="bg-transparent -mb-24 relative top-0 left-0">
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
-        <Dialog as="div" className="fixed inset-0 flex z-40 lg:hidden" onClose={setOpen}>
+        <Dialog
+          as="div"
+          className="fixed inset-0 flex z-40 lg:hidden"
+          onClose={setOpen}
+        >
           <Transition.Child
             as={Fragment}
             enter="transition-opacity ease-linear duration-300"
@@ -64,7 +75,16 @@ export default function Header() {
               <div className="border-t border-gray-200 py-6 px-4 space-y-6">
                 {navigation.pages.map((page) => (
                   <div key={page.name} className="flow-root">
-                    <NavLink to={page.href} onClick={() => setOpen(false)} className={({ isActive}) => classNames("-m-2 p-2 block font-medium text-white", isActive ? "text-blue-400 underline" :"")}>
+                    <NavLink
+                      to={page.href}
+                      onClick={() => setOpen(false)}
+                      className={({ isActive }) =>
+                        classNames(
+                          "-m-2 p-2 block font-medium text-white",
+                          isActive ? "text-blue-400 underline" : ""
+                        )
+                      }
+                    >
                       {page.name}
                     </NavLink>
                   </div>
@@ -85,12 +105,10 @@ export default function Header() {
                   {/* Logo (lg+) */}
                   <div className="hidden lg:flex-1 lg:flex lg:items-center ">
                     <NavLink to="/" className="bg-slate-100 rounded-full">
-                      <span className="sr-only">DiemQuynhSeafoods</span>
-                      <img
-                        className="h-14  w-auto"
-                        src="/DIQ_logo.webp"
-                        alt="logo"
-                      />
+                      <span className="sr-only">
+                        {companyName ?? "DiemQuynhSeafoods"}
+                      </span>
+                      <img className="h-14  w-auto" src={logo} alt="logo" />
                     </NavLink>
                   </div>
 
@@ -102,7 +120,12 @@ export default function Header() {
                           <NavLink
                             key={page.name}
                             to={page.href}
-                            className={({ isActive }) => classNames("flex items-center text-sm font-medium text-white  hover:text-blue-400", isActive ? "text-blue-400" : "")}
+                            className={({ isActive }) =>
+                              classNames(
+                                "flex items-center text-sm font-medium text-white  hover:text-blue-400",
+                                isActive ? "text-blue-400" : ""
+                              )
+                            }
                           >
                             {page.name}
                           </NavLink>
@@ -115,26 +138,24 @@ export default function Header() {
                   <div className="flex-1 flex items-center lg:hidden z-20">
                     <button
                       type="button"
-                      className={classNames("-ml-2  p-2 rounded-md text-white", open ? "hidden" : "")}
+                      className={classNames(
+                        "-ml-2  p-2 rounded-md text-white",
+                        open ? "hidden" : ""
+                      )}
                       onClick={() => setOpen(true)}
                     >
                       <span className="sr-only">Open menu</span>
                       <Bars2Icon className="h-6 w-6" aria-hidden="true" />
                     </button>
-
                   </div>
 
                   {/* Logo (lg-) */}
                   <NavLink to="/" className="lg:hidden bg-white rounded-full">
-                    <span className="sr-only">DiemQuynhSeafoods</span>
-                    <img
-                      src="/DIQ_logo.webp"
-                      alt="logo"
-                      className="h-14 w-auto"
-                    />
+                    <span className="sr-only">{companyName}</span>
+                    <img src={logo} alt="logo" className="h-14 w-auto" />
                   </NavLink>
 
-                  <div className="flex-1 flex items-center justify-end"/>
+                  <div className="flex-1 flex items-center justify-end" />
                 </div>
               </div>
             </div>

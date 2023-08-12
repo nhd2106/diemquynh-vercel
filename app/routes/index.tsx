@@ -1,4 +1,4 @@
-import { useNavigate, Link } from "@remix-run/react";
+import { useNavigate, Link, useOutletContext } from "@remix-run/react";
 import { ArrowRightIcon, CheckIcon } from "@heroicons/react/24/outline";
 import CountUp from "react-countup";
 
@@ -8,6 +8,9 @@ import CustomerIcon from "~/utils/CustomerIcon";
 
 export default function Home() {
   const navigate = useNavigate();
+  const { companyName } = useOutletContext<{
+    companyName: string;
+  }>();
   return (
     <div className="text-white">
       <div
@@ -186,7 +189,11 @@ export default function Home() {
           <div className="md:flex justify-center mx-3 md:mx-10">
             <div className="md:w-1/2 ">
               <div>
-                <img className="object-contain" src="/red-meat-of-raw-fish.webp" alt="img-fish-center" />
+                <img
+                  className="object-contain"
+                  src="/red-meat-of-raw-fish.webp"
+                  alt="img-fish-center"
+                />
               </div>
               <div className="md:-mt-[50%]">
                 <img
@@ -211,8 +218,14 @@ export default function Home() {
                     WE PRODUCE THE BEST QUALITY SEA PRODUCT
                   </h3>
                   <p className="text-gray-400">
-                  DiemQuynhSeafoods is a family company specializing many kinds of fishes: Red Snapper, Red Mullet, Grouper, Barramundi, Emperor, Parrot, King Snapper, White Snapper, Sweeplip, Mahi Mahi, Pomfret, Leather Jacket, Ribbonfish, Black Tilapia, Red Tilapia, Octopus, Cuttlefish, Loligo Squids ...
-We have established for 10 years in order to keep a stable quality, a reasonable price and a full responsibility for all final buyers...
+                    {companyName ? companyName : "DiemQuynhSeafoods"} is a
+                    family company specializing many kinds of fishes: Red
+                    Snapper, Red Mullet, Grouper, Barramundi, Emperor, Parrot,
+                    King Snapper, White Snapper, Sweeplip, Mahi Mahi, Pomfret,
+                    Leather Jacket, Ribbonfish, Black Tilapia, Red Tilapia,
+                    Octopus, Cuttlefish, Loligo Squids ... We have established
+                    for 10 years in order to keep a stable quality, a reasonable
+                    price and a full responsibility for all final buyers...
                   </p>
                   <div className="flex space-x-5">
                     <ul>
@@ -302,7 +315,10 @@ We have established for 10 years in order to keep a stable quality, a reasonable
             <div className="md:flex justify-center">
               <div className="text-center md:w-2/5 space-y-5">
                 <p className="text-lg md:text-xl text-blue-300">Our Product</p>
-                <p data-aos="fade-right" className="text-2xl md:text-4xl font-bold">
+                <p
+                  data-aos="fade-right"
+                  className="text-2xl md:text-4xl font-bold"
+                >
                   THE PRODUCT THAT WE PROVIDE FOR YOU IS HIGH QUALITY
                 </p>
                 <p>

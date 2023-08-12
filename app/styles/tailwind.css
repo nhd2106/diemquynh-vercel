@@ -678,6 +678,10 @@ video {
   margin-top: 3rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -696,10 +700,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
 }
 
 .block {
@@ -1599,16 +1599,12 @@ body {
     margin-top: 0px;
   }
 
-  .md\:mt-5 {
-    margin-top: 1.25rem;
-  }
-
-  .md\:mt-1 {
-    margin-top: 0.25rem;
-  }
-
   .md\:mt-2 {
     margin-top: 0.5rem;
+  }
+
+  .md\:mt-5 {
+    margin-top: 1.25rem;
   }
 
   .md\:block {

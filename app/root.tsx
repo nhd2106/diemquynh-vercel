@@ -1,4 +1,9 @@
-import type { MetaFunction, LinksFunction } from "@remix-run/node";
+import {
+  type MetaFunction,
+  type LinksFunction,
+  json,
+  type LoaderFunction,
+} from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -6,34 +11,44 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLoaderData,
 } from "@remix-run/react";
 
-import AOS from 'aos';
-import aos from 'aos/dist/aos.css';
-
-
+import AOS from "aos";
+import aos from "aos/dist/aos.css";
 
 import Header from "~/components/Header";
 import styles from "./styles/tailwind.css";
 import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 
-
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
   { rel: "stylesheet", href: aos },
-  { rel: "icon", href: "/favicon.ico"}
+  { rel: "icon", href: "/favicon.ico" },
 ];
 
-export const meta: MetaFunction = () => ({
-  charset: "utf-8",
-  title: "DiemQuynh Seafoods",
-  description: "DiemquynhSeafoods Co., Ltd specializes in producing, exporting and distributing high quality dried and frozen seafood items",
-  viewport: "width=device-width,initial-scale=1",
+export const meta: MetaFunction = (context) => {
+  return {
+    charset: "utf-8",
+    title: context?.data?.title ?? "DiemQuynh Seafoods",
+    description: `${context?.data.companyName} Co., Ltd specializes in producing, exporting and distributing high quality dried and frozen seafood items`,
+    viewport: "width=device-width,initial-scale=1",
+  };
+};
 
-});
+export const loader: LoaderFunction = async (context) => {
+  const host = context.request.headers.get("host") as string;
+  const isDQ = host.indexOf("diemquynh") !== -1;
+  const logo = isDQ ? "DIQ_logo.webp" : "vanthinh-logo.webp";
+  const domain = isDQ ? "diemquynhseafoods.com" : "vanthinhseafoods.com";
+  const companyName = isDQ ? "DiemQuynhSeafoods" : "VanThinhSeafoods";
+  const title = isDQ ? "DiemQuynh Seafoods" : "VanThinh Seafoods";
+  return json({ logo, domain, companyName, title });
+};
 
 export default function App() {
+  const data = useLoaderData<typeof loader>();
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -56,14 +71,12 @@ export default function App() {
     AOS.init({
       delay: 300,
       duration: 2000,
-      
     });
     document.addEventListener("scroll", function (e) {
       toggleVisibility();
     });
-  },[]);
+  }, []);
 
- 
   return (
     <html lang="en">
       <head>
@@ -71,9 +84,13 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Header/>
-        <Outlet />
-        <Footer/>
+        <Header
+          domain={data.domain}
+          logo={data.logo}
+          companyName={data.companyName}
+        />
+        <Outlet context={data} />
+        <Footer domain={data.domain} companyName={data.companyName} />
         <ScrollRestoration />
         {isVisible ? (
           <button

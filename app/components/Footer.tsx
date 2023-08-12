@@ -57,7 +57,13 @@ const navigation = {
   ],
 };
 
-function Footer() {
+function Footer({
+  domain,
+  companyName,
+}: {
+  domain: string;
+  companyName: string;
+}) {
   return (
     <footer className="bg-black " aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
@@ -120,7 +126,9 @@ function Footer() {
                   </li>
                   <li className="flex space-x-2 items-center">
                     <EnvelopeIcon className="h-5 w-5 md:w-10 md:h-10" />
-                    <span>info@diemquynhseafoods.com</span>
+                    <span>
+                      {domain ? `info@${domain}` : "info@diemquynhseafoods.com"}
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -176,7 +184,8 @@ function Footer() {
             ))}
           </div>
           <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-            &copy; 2022 DiemQuynhSeafoods, Inc. All rights reserved.
+            &copy; 2022 {companyName ?? "DiemQuynhSeafoods"}, Inc. All rights
+            reserved.
           </p>
         </div>
 

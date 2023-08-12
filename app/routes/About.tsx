@@ -1,10 +1,13 @@
 import { CheckIcon } from "@heroicons/react/24/outline";
-import { Link, useNavigate } from "@remix-run/react";
+import { Link, useNavigate, useOutletContext } from "@remix-run/react";
 import CountUp from "react-countup";
 import CustomerIcon from "~/utils/CustomerIcon";
 import FishIcon from "~/utils/FishIcon";
 
 function About() {
+  const { companyName } = useOutletContext<{
+    companyName: string;
+  }>();
   const navigate = useNavigate();
   return (
     <div className="text-white">
@@ -21,13 +24,13 @@ function About() {
         <div className="md:w-2/5 mx-5 md:mx-0 flex flex-col md:ml-20 z-10 relative">
           <h1 className="text-3xl mb-5">About Us</h1>
           <p>
-            DiemQuynhSeafoods is a family company specializing many kinds of
-            fishes: Red Snapper, Red Mullet, Grouper, Barramundi, Emperor,
-            Parrot, King Snapper, White Snapper, Sweeplip, Mahi Mahi, Pomfret,
-            Leather Jacket, Ribbonfish, Black Tilapia, Red Tilapia, Octopus,
-            Cuttlefish, Loligo Squids ... We have established for 10 years in
-            order to keep a stable quality, a reasonable price and a full
-            responsibility for all final buyers...
+            {companyName} is a family company specializing many kinds of fishes:
+            Red Snapper, Red Mullet, Grouper, Barramundi, Emperor, Parrot, King
+            Snapper, White Snapper, Sweeplip, Mahi Mahi, Pomfret, Leather
+            Jacket, Ribbonfish, Black Tilapia, Red Tilapia, Octopus, Cuttlefish,
+            Loligo Squids ... We have established for 10 years in order to keep
+            a stable quality, a reasonable price and a full responsibility for
+            all final buyers...
           </p>
         </div>
       </div>
@@ -134,13 +137,13 @@ function About() {
                     WE PRODUCE THE BEST QUALITY SEA PRODUCT
                   </h3>
                   <p className="text-gray-400">
-                    DiemQuynhSeafoods is a family company specializing many
-                    kinds of fishes: Red Snapper, Red Mullet, Grouper,
-                    Barramundi, Emperor, Parrot, King Snapper, White Snapper,
-                    Sweeplip, Mahi Mahi, Pomfret, Leather Jacket, Ribbonfish,
-                    Black Tilapia, Red Tilapia, Octopus, Cuttlefish, Loligo
-                    Squids ... We have established for 10 years in order to keep
-                    a stable quality, a reasonable price and a full
+                    {companyName ?? "DiemQuynhSeafoods"} is a family company
+                    specializing many kinds of fishes: Red Snapper, Red Mullet,
+                    Grouper, Barramundi, Emperor, Parrot, King Snapper, White
+                    Snapper, Sweeplip, Mahi Mahi, Pomfret, Leather Jacket,
+                    Ribbonfish, Black Tilapia, Red Tilapia, Octopus, Cuttlefish,
+                    Loligo Squids ... We have established for 10 years in order
+                    to keep a stable quality, a reasonable price and a full
                     responsibility for all final buyers...
                   </p>
                   <div className="flex space-x-5">
