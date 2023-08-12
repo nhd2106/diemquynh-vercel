@@ -146,7 +146,7 @@ export default function Home() {
               <div className="md:w-1/2 h-full">
                 <img
                   className="h-full w-full object-cover"
-                  src="/fish-on-a-fish-market.webp"
+                  src="/barramundi.webp"
                   alt="count-img"
                 />
               </div>
@@ -191,7 +191,7 @@ export default function Home() {
               <div>
                 <img
                   className="object-contain"
-                  src="/red-meat-of-raw-fish.webp"
+                  src="/fish-on-ice.webp"
                   alt="img-fish-center"
                 />
               </div>
@@ -334,16 +334,16 @@ export default function Home() {
           <div className="md:flex justify-center md:space-x-10 w-5/6 mr-auto ml-auto relative md:w-3/4">
             {[
               {
-                imageUrl: "/red-meat-of-raw-fish.webp",
-                productName: "Barramundi",
+                imageUrl: "/fish-on-ice.webp",
+                productName: "Barramundi Fillet",
               },
               {
-                imageUrl: "/red-meat-of-raw-fish.webp",
-                productName: "Grouper Fillet",
+                imageUrl: "/fish-on-ice.webp",
+                productName: "Barramundi Fillet",
               },
               {
-                imageUrl: "/red-meat-of-raw-fish.webp",
-                productName: "Red Barramundi",
+                imageUrl: "/fish-on-ice.webp",
+                productName: "Barramundi Fillet",
               },
             ].map(({ imageUrl, productName }, index) => (
               <div key={index} className="flex flex-col items-center my-3">
@@ -370,7 +370,7 @@ export default function Home() {
                 filter:
                   "brightness( 67% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg )",
               }}
-              src="barramundi-on-ice.webp"
+              src="ice-fish-bath.webp"
               alt="barrmundi"
             />
           </div>
