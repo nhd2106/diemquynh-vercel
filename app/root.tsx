@@ -34,6 +34,9 @@ export const meta: MetaFunction = (context) => {
     title: context?.data?.title ?? "DiemQuynh Seafoods",
     description: `${context?.data.companyName} Co., Ltd specializes in producing, exporting and distributing high quality dried and frozen seafood items`,
     viewport: "width=device-width,initial-scale=1",
+    "og:title": context?.data?.title ?? "DiemQuynh Seafoods",
+    "og:description": `${context?.data.companyName} Co., Ltd specializes in producing, exporting and distributing high quality dried and frozen seafood items`,
+    "og:image": `https://${context?.data.domain}/${context?.data.logo}`,
   };
 };
 
