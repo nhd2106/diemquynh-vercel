@@ -191,7 +191,7 @@ export default function Home() {
               <div>
                 <img
                   className="object-contain"
-                  src="/fish-on-ice.webp"
+                  src="/fish-on-ice-bright.webp"
                   alt="img-fish-center"
                 />
               </div>
@@ -334,15 +334,15 @@ export default function Home() {
           <div className="md:flex justify-center md:space-x-10 w-5/6 mr-auto ml-auto relative md:w-3/4">
             {[
               {
-                imageUrl: "/fish-on-ice.webp",
+                imageUrl: "/fish-on-ice-bright.webp",
                 productName: "Barramundi Fillet",
               },
               {
-                imageUrl: "/fish-on-ice.webp",
+                imageUrl: "/fish-on-ice-bright.webp",
                 productName: "Barramundi Fillet",
               },
               {
-                imageUrl: "/fish-on-ice.webp",
+                imageUrl: "/fish-on-ice-bright.webp",
                 productName: "Barramundi Fillet",
               },
             ].map(({ imageUrl, productName }, index) => (
