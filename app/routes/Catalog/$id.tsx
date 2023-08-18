@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 
 interface Fish {
@@ -23,17 +24,12 @@ const FishDetails = () => {
           orientation: "horizontal",
         },
         {
-          url: "/fishes/barramundi/barramundi_1.webp",
-          orientation: "horizontal",
+          url: "/fishes/barramundi/barramundi_2.webp",
+          orientation: "vertical",
         },
         {
           url: "/fishes/barramundi/barramundi_3.webp",
           orientation: "horizontal",
-        },
-
-        {
-          url: "/fishes/barramundi/barramundi_2.webp",
-          orientation: "vertical",
         },
         {
           url: "/fishes/barramundi/barramundi_4.webp",
@@ -45,20 +41,44 @@ const FishDetails = () => {
         },
       ],
     },
+    grouper: {
+      name: "Grouper",
+      description:
+        "Grouper fillet: A delectable seafood delight with a firm texture and mild, succulent flavor. Perfect for gourmet dishes or simple grilling, our grouper fillets promise a delightful culinary experience that caters to seafood enthusiasts of all tastes.",
+      images: [
+        {
+          url: "/fishes/grouper/grouper_1.webp",
+          orientation: "vertical",
+        },
+        {
+          url: "/fishes/grouper/grouper_2.webp",
+          orientation: "vertical",
+        },
+      ],
+    },
   };
 
   const fish = fishes?.[id as string];
+  const [fullScreenImage, setFullScreenImage] = useState("");
+
+  const handleImageClick = (url: string) => {
+    setFullScreenImage(url);
+  };
+
+  const handleCloseFullScreenImage = () => {
+    setFullScreenImage("");
+  };
 
   return (
     <div className="text-white bg-gray-900">
       <div
+        className="fish-details-header py-20 md:py-40 lg:py-64 relative"
         style={{
           backgroundImage: `url(${fish?.images?.[0].url})`,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center center",
           backgroundSize: "cover",
         }}
-        className="py-20 md:py-40 lg:py-64 relative"
       >
         <div className="bg-black opacity-50 absolute top-0 left-0 h-full w-full"></div>
         <div className="w-full md:w-2/3 lg:w-1/2 mx-auto relative z-10">
@@ -89,12 +109,37 @@ const FishDetails = () => {
                   style={{
                     objectFit: "cover",
                   }}
+                  onClick={() => handleImageClick(image.url)}
                 />
               </div>
             ))}
           </div>
         </div>
       </div>
+      {fullScreenImage && (
+        <div
+          className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex justify-center items-center"
+          onClick={handleCloseFullScreenImage}
+        >
+          <div
+            className="bg-white rounded-lg p-4 shadow-md"
+            style={{
+              maxHeight: "90vh",
+              maxWidth: "90vw",
+            }}
+          >
+            <img
+              src={fullScreenImage}
+              alt="Full screen"
+              className="max-h-full max-w-full transition-all duration-2000 ease-in-out"
+              style={{
+                maxHeight: "calc(90vh - 2rem)",
+                maxWidth: "calc(90vw - 2rem)",
+              }}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
