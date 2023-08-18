@@ -339,26 +339,33 @@ export default function Home() {
           <div className="md:flex justify-center md:space-x-10 w-5/6 mr-auto ml-auto relative md:w-3/4">
             {[
               {
-                imageUrl: "/fish-on-ice-bright.webp",
-                productName: "Barramundi Fillet",
+                imageUrl: "/fishes/barramundi/barramundi_1.webp",
+                productName: "Barramundi",
+                slug: "/catalog/barramundi",
+              },
+              {
+                imageUrl: "/fishes/grouper/grouper_2.webp",
+                productName: "Grouper",
+                slug: "/catalog/grouper",
               },
               {
                 imageUrl: "/fish-on-ice-bright.webp",
                 productName: "Barramundi Fillet",
+                slug: "/catalog/barramundi",
               },
-              {
-                imageUrl: "/fish-on-ice-bright.webp",
-                productName: "Barramundi Fillet",
-              },
-            ].map(({ imageUrl, productName }, index) => (
+            ].map(({ imageUrl, productName, slug }, index) => (
               <div key={index} className="flex flex-col items-center my-3">
-                <div>
-                  <img src={imageUrl} alt="red-meat-of-raw-fish" />
+                <div className="w-96">
+                  <img
+                    src={imageUrl}
+                    alt="red-meat-of-raw-fish"
+                    className="object-cover w-full h-full"
+                  />
                 </div>
                 <div className="bg-white text-black -mt-5 mr-10 mb-0 md:ml-10 px-10 py-2 rounded-md font-bold">
                   <h3 className="text-lg md:text-xl">{productName}</h3>
                   <Link
-                    to="/catalog/barramundi"
+                    to={slug}
                     className="text-blue-300 flex items-center space-x-2"
                   >
                     <span>View product</span>
