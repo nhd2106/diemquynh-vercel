@@ -150,8 +150,8 @@ export default function Home() {
             <div className="md:flex md:space-x-10 h-72">
               <div className="md:w-1/2 h-full">
                 <img
-                  className="h-full w-full object-cover"
-                  src="/barramundi.webp"
+                  className="h-full w-full object-cover top-0"
+                  src="ice-fish-bath.webp"
                   alt="count-img"
                 />
               </div>
@@ -357,10 +357,13 @@ export default function Home() {
                 </div>
                 <div className="bg-white text-black -mt-5 mr-10 mb-0 md:ml-10 px-10 py-2 rounded-md font-bold">
                   <h3 className="text-lg md:text-xl">{productName}</h3>
-                  <button className="text-blue-300 flex items-center space-x-2">
+                  <Link
+                    to="/catalog/barramundi"
+                    className="text-blue-300 flex items-center space-x-2"
+                  >
                     <span>View product</span>
                     <ArrowRightIcon className="w-5 h-5" />
-                  </button>
+                  </Link>
                 </div>
               </div>
             ))}
