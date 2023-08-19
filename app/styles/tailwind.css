@@ -762,12 +762,32 @@ video {
   height: 18rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .h-full {
   height: 100%;
 }
 
-.h-96 {
-  height: 24rem;
+.h-64 {
+  height: 16rem;
+}
+
+.h-\[30rem\] {
+  height: 30rem;
+}
+
+.h-\[40rem\] {
+  height: 40rem;
+}
+
+.h-\[50rem\] {
+  height: 50rem;
+}
+
+.h-\[20rem\] {
+  height: 20rem;
 }
 
 .max-h-full {
@@ -802,24 +822,16 @@ video {
   width: 1.75rem;
 }
 
+.w-96 {
+  width: 24rem;
+}
+
 .w-auto {
   width: auto;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-20 {
-  width: 5rem;
-}
-
-.w-60 {
-  width: 15rem;
-}
-
-.w-96 {
-  width: 24rem;
 }
 
 .min-w-0 {
@@ -918,12 +930,12 @@ video {
   justify-content: space-around;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-y-6 {
@@ -1122,12 +1134,12 @@ video {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-opacity-90 {
-  --tw-bg-opacity: 0.9;
-}
-
 .bg-opacity-75 {
   --tw-bg-opacity: 0.75;
+}
+
+.bg-opacity-90 {
+  --tw-bg-opacity: 0.9;
 }
 
 .object-contain {
@@ -1140,11 +1152,6 @@ video {
      object-fit: cover;
 }
 
-.object-fill {
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
 .object-center {
   -o-object-position: center;
      object-position: center;
@@ -1154,12 +1161,12 @@ video {
   padding: 0.5rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .p-4 {
   padding: 1rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-10 {
@@ -1418,6 +1425,12 @@ video {
   opacity: 0.5;
 }
 
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
@@ -1427,12 +1440,6 @@ video {
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-md {
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1457,14 +1464,14 @@ video {
   transition-duration: 150ms;
 }
 
-.transition-opacity {
-  transition-property: opacity;
+.transition-all {
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-.transition-all {
-  transition-property: all;
+.transition-opacity {
+  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1475,14 +1482,6 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
-}
-
-.duration-500 {
-  transition-duration: 500ms;
-}
-
-.duration-1000 {
-  transition-duration: 1000ms;
 }
 
 .ease-in {
@@ -1715,6 +1714,14 @@ body {
 
   .md\:h-10 {
     height: 2.5rem;
+  }
+
+  .md\:h-\[50rem\] {
+    height: 50rem;
+  }
+
+  .md\:h-96 {
+    height: 24rem;
   }
 
   .md\:w-1\/2 {

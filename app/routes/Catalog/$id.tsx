@@ -24,12 +24,16 @@ const FishDetails = () => {
           orientation: "horizontal",
         },
         {
-          url: "/fishes/barramundi/barramundi_2.webp",
-          orientation: "vertical",
+          url: "/fishes/barramundi/barramundi_1.webp",
+          orientation: "horizontal",
         },
         {
           url: "/fishes/barramundi/barramundi_3.webp",
           orientation: "horizontal",
+        },
+        {
+          url: "/fishes/barramundi/barramundi_2.webp",
+          orientation: "vertical",
         },
         {
           url: "/fishes/barramundi/barramundi_4.webp",
@@ -97,7 +101,9 @@ const FishDetails = () => {
               <div
                 key={index}
                 className={`w-full ${
-                  image.orientation === "horizontal" ? "h-48" : "h-96"
+                  image.orientation === "horizontal"
+                    ? "h-48 md:h-96"
+                    : "h-[30rem] md:h-[50rem]"
                 } relative rounded-lg overflow-hidden shadow-md`}
               >
                 <img
@@ -118,7 +124,7 @@ const FishDetails = () => {
       </div>
       {fullScreenImage && (
         <div
-          className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex justify-center items-center"
+          className="fixed z-10 top-0 left-0 w-full h-full bg-black bg-opacity-75 flex justify-center items-center"
           onClick={handleCloseFullScreenImage}
         >
           <div
