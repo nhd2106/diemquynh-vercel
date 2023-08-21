@@ -196,7 +196,7 @@ export default function Home() {
               <div>
                 <img
                   className="object-contain"
-                  src="/fish-on-ice-bright.webp"
+                  src="/fishes/red_snapper/red_snapper_1.webp"
                   alt="img-fish-center"
                 />
               </div>
