@@ -24,7 +24,7 @@ export const  fishes: Fishes = {
           title: "Barramundi",
         },
         {
-          url: "/fishes/barramundi/barramundi_1.webp",
+          url: "/fishes/barramundi/barramundi_2.webp",
           orientation: "horizontal",
 
           title: "Barramundi",
@@ -35,18 +35,18 @@ export const  fishes: Fishes = {
           title: "Barramundi Portion centre cut",
         },
         {
-          url: "/fishes/barramundi/barramundi_2.webp",
+          url: "/fishes/barramundi/barramundi_4.webp",
           orientation: "vertical",
 
           title: "Barramundi fillet skin on",
         },
         {
-          url: "/fishes/barramundi/barramundi_4.webp",
+          url: "/fishes/barramundi/barramundi_5.webp",
           orientation: "vertical",
           title: "Barramundi fillet skinless deeply trimmed",
         },
         {
-          url: "/fishes/barramundi/barramundi_5.webp",
+          url: "/fishes/barramundi/barramundi_4.webp",
           orientation: "vertical",
           title: "Barramundi fillet skinless",
         },
@@ -65,6 +65,14 @@ export const  fishes: Fishes = {
           url: "/fishes/grouper/grouper_2.webp",
           orientation: "vertical",
         },
+        {
+          url: "/fishes/grouper/grouper_3.webp",
+          orientation: "vertical",
+        },
+        {
+          url: "/fishes/grouper/grouper_4.webp",
+          orientation: "vertical",
+        },
       ],
     },
     
@@ -76,8 +84,17 @@ export const  fishes: Fishes = {
                 url: "/fishes/red_snapper/red_snapper_1.webp",
                 orientation: "horizontal",
                 title: "Red Snapper",
-            
-            }
+            },
+            {
+                url: "/fishes/red_snapper/red_snapper_2.webp",
+                orientation: "horizontal",
+                title: "Red Snapper",
+            },
+            {
+                url: "/fishes/red_snapper/red_snapper_3.webp",
+                orientation: "horizontal",
+                title: "Red Snapper",
+            },
         ]
     },
     red_spot_emperor: {
@@ -88,8 +105,22 @@ export const  fishes: Fishes = {
                 url: "/fishes/red_spot_emperor/red_spot_emperor_1.webp",
                 orientation: "horizontal",
                 title: "Red Spot Emperor",
-
-            }
+            },
+            {
+                url: "/fishes/red_spot_emperor/red_spot_emperor_2.webp",
+                orientation: "horizontal",
+                title: "Red Spot Emperor",
+            },
+            {
+                url: "/fishes/red_spot_emperor/red_spot_emperor_3.webp",
+                orientation: "horizontal",
+                title: "Red Spot Emperor",
+            },
+            {
+                url: "/fishes/red_spot_emperor/red_spot_emperor_4.webp",
+                orientation: "horizontal",
+                title: "Red Spot Emperor",
+            },
         ]
     },
     red_mullet: {
@@ -100,7 +131,12 @@ export const  fishes: Fishes = {
                 url: "/fishes/red_mullet/red_mullet_1.webp",
                 orientation: "horizontal",
                 title: "Red Mullet",
-            }
+            },
+            {
+                url: "/fishes/red_mullet/red_mullet_2.webp",
+                orientation: "horizontal",
+                title: "Red Mullet",
+            },
         ]
     },
     goldband_snapper: {
@@ -111,7 +147,17 @@ export const  fishes: Fishes = {
                 url: "/fishes/goldband_snapper/goldband_snapper_1.webp",
                 orientation: "horizontal",
                 title: "Goldband Snapper",
-            }
+            },
+            {
+                url: "/fishes/goldband_snapper/goldband_snapper_2.webp",
+                orientation: "horizontal",
+                title: "Goldband Snapper",
+            },
+            {
+                url: "/fishes/goldband_snapper/goldband_snapper_3.webp",
+                orientation: "horizontal",
+                title: "Goldband Snapper",
+            },
         ]
     },
     leather_jacket: {
@@ -120,6 +166,11 @@ export const  fishes: Fishes = {
         images: [
             {
                 url: "/fishes/leather_jacket/leather_jacket_1.webp",
+                orientation: "horizontal",
+                title: "Leather Jacket",
+            },
+            {
+                url: "/fishes/leather_jacket/leather_jacket_2.webp",
                 orientation: "horizontal",
                 title: "Leather Jacket",
             }
@@ -133,7 +184,17 @@ export const  fishes: Fishes = {
                 url: "/fishes/mahi_mahi/mahi_mahi_1.webp",
                 orientation: "horizontal",
                 title: "Mahi Mahi",
-            }
+            },
+            {
+                url: "/fishes/mahi_mahi/mahi_mahi_2.webp",
+                orientation: "horizontal",
+                title: "Mahi Mahi",
+            },
+            {
+                url: "/fishes/mahi_mahi/mahi_mahi_3.webp",
+                orientation: "horizontal",
+                title: "Mahi Mahi",
+            },
         ]
     },
     parrot_fish: {
@@ -141,11 +202,25 @@ export const  fishes: Fishes = {
         description: "Parrot Fish is a versatile fish that can be grilled, baked, or fried. It has a mild, buttery flavor and a firm, flaky texture.",
         images: [
             {
-                url: "/fishes/parrot_fish/parrot_fish_1.webp",
+                url: "/fishes/parrotfish/parrotfish_1.webp",
                 orientation: "horizontal",
                 title: "Parrot Fish",
-
-            }
+            },
+            {
+                url: "/fishes/parrotfish/parrotfish_2.webp",
+                orientation: "horizontal",
+                title: "Parrot Fish",
+            },
+            {
+                url: "/fishes/parrotfish/parrotfish_3.webp",
+                orientation: "horizontal",
+                title: "Parrot Fish",
+            },
+            {
+                url: "/fishes/parrotfish/parrotfish_4.webp",
+                orientation: "horizontal",
+                title: "Parrot Fish",
+            },
         ]
     },
     sillago_whiting: {
@@ -155,7 +230,14 @@ export const  fishes: Fishes = {
             {
                 url: "/fishes/sillago_whiting/sillago_whiting_1.webp",
                 orientation: "horizontal",
-
+            },
+            {
+                url: "/fishes/sillago_whiting/sillago_whiting_2.webp",
+                orientation: "horizontal",
+            },
+            {
+                url: "/fishes/sillago_whiting/sillago_whiting_3.webp",
+                orientation: "horizontal",
             }
         ]
     }
