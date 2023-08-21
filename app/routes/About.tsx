@@ -112,10 +112,7 @@ function About() {
           <div className="md:flex justify-center mx-3 md:mx-10">
             <div className="md:w-1/2 ">
               <div>
-                <img
-                  src="/fishes/red_snapper/red_snapper_1.webp"
-                  alt="img-fish-center"
-                />
+                <img src="/barramundi_home_image.webp" alt="img-fish-center" />
               </div>
               <div className="md:-mt-[50%]">
                 <img
