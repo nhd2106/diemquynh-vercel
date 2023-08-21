@@ -56,12 +56,12 @@ function About() {
                   </button>
                 </div>
                 <div className="md:w-1/2 mt-5">
-                  <p>
+                  {/* <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Alias, rem optio similique provident magnam dolorum earum,
                     veniam eos consequuntur deserunt modi fuga ad cum nesciunt
                     deleniti quaerat accusamus non odio!
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
