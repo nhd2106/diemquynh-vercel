@@ -326,11 +326,11 @@ export default function Home() {
                 >
                   THE PRODUCT THAT WE PROVIDE FOR YOU IS HIGH QUALITY
                 </p>
-                <p>
+                {/* <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Labore, eaque autem maiores a enim consequatur soluta velit
                   non natus dolorem?
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -349,13 +349,13 @@ export default function Home() {
                 slug: "/catalog/grouper",
               },
               {
-                imageUrl: "/fish-on-ice-bright.webp",
-                productName: "Barramundi Fillet",
-                slug: "/catalog/barramundi",
+                imageUrl: "/fishes/red_snapper/red_snapper_1.webp",
+                productName: "Red Snapper",
+                slug: "/catalog/red_snapper",
               },
             ].map(({ imageUrl, productName, slug }, index) => (
               <div key={index} className="flex flex-col items-center my-3">
-                <div className="w-96">
+                <div className="w-96 p-8">
                   <img
                     src={imageUrl}
                     alt="red-meat-of-raw-fish"
