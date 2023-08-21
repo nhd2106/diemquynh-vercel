@@ -838,10 +838,6 @@ video {
   flex-shrink: 0;
 }
 
-.grow-\[1\] {
-  flex-grow: 1;
-}
-
 .grow-0 {
   flex-grow: 0;
 }
@@ -1151,10 +1147,6 @@ video {
 
 .p-8 {
   padding: 2rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
 }
 
 .px-10 {

@@ -66,7 +66,9 @@ function Contact() {
                       aria-hidden="true"
                     />
                     <span className="ml-3">
-                      {domain ? `info@${domain}` : "info@diemquynhseafoods.com"}
+                      {domain
+                        ? `myngo@${domain}`
+                        : "myngo@diemquynhseafoods.com"}
                     </span>
                   </dd>
                 </div>

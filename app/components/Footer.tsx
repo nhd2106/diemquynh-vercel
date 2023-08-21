@@ -127,7 +127,9 @@ function Footer({
                   <li className="flex space-x-2 items-center">
                     <EnvelopeIcon className="h-5 w-5 md:w-10 md:h-10" />
                     <span>
-                      {domain ? `info@${domain}` : "info@diemquynhseafoods.com"}
+                      {domain
+                        ? `myngo@${domain}`
+                        : "myngo@diemquynhseafoods.com"}
                     </span>
                   </li>
                 </ul>

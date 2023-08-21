@@ -27,7 +27,7 @@ export const  fishes: Fishes = {
           url: "/fishes/barramundi/barramundi_2.webp",
           orientation: "horizontal",
 
-          title: "Barramundi",
+          title: "Barramundi fillet skin on",
         },
         {
           url: "/fishes/barramundi/barramundi_3.webp",
@@ -37,12 +37,12 @@ export const  fishes: Fishes = {
         {
           url: "/fishes/barramundi/barramundi_4.webp",
           orientation: "vertical",
-          title: "Barramundi fillet skin on",
+          title: "Barramundi fillet skinless deeply trimmed",
         },
         {
           url: "/fishes/barramundi/barramundi_5.webp",
           orientation: "vertical",
-          title: "Barramundi fillet skinless deeply trimmed",
+          title: "Barramundi fillet skinless",
         
         },
       ],
