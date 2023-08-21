@@ -12,7 +12,7 @@ function Contact() {
           backgroundPosition: "center center",
           backgroundSize: "cover",
         }}
-        className="py-64"
+        className="py-64 relative"
       >
         <div className="bg-black opacity-50 absolute top-0 left-0 h-full w-full" />
         <div className="relative z-10 flex md:ml-20">

@@ -124,7 +124,7 @@ export default function Home() {
             backgroundPosition: "center center",
             backgroundSize: "cover",
           }}
-          className="py-36 md:max-w-8xl px-5 md:px-20 mb-80 md:mb-0"
+          className="py-36 md:max-w-8xl px-5 md:px-20 mb-80 md:mb-0 relative"
         >
           <div>
             <div className="space-y">
