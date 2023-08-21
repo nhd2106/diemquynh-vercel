@@ -12,13 +12,46 @@ const FishCatalog = () => {
       slug: "grouper",
       image: "/fishes/grouper/grouper_1.webp",
     },
-    // { name: "Red Snapper", slug: "red-snapper" },
-    // { name: "Red Spot Emperor", slug: "red-spot-emperor" },
-    // { name: "King Snapper", slug: "king-snapper" },
-    // { name: "Goldband Snapper", slug: "goldband-snapper" },
-    // { name: "Crimson Snapper", slug: "crimson-snapper" },
-    // { name: "Mahi Mahi", slug: "mahi-mahi" },
-    // { name: "Parrotfish", slug: "parrotfish" },
+    {
+      name: "Red Snapper",
+      slug: "red_snapper",
+      image: "/fishes/red_snapper/red_snapper_1.webp",
+    },
+    {
+      name: "Red Spot Emperor",
+      slug: "red_spot_emperor",
+      image: "/fishes/red_spot_emperor/red_spot_emperor_1.webp",
+    },
+    {
+      name: "Leather Jacket",
+      slug: "leather_jacket",
+      image: "/fishes/leather_jacket/leather_jacket_1.webp",
+    },
+    {
+      name: "Goldband Snapper",
+      slug: "goldband_snapper",
+      image: "/fishes/goldband_snapper/goldband_snapper_1.webp",
+    },
+    {
+      name: "Mahi Mahi",
+      slug: "mahi_mahi",
+      image: "/fishes/mahi_mahi/mahi_mahi_1.webp",
+    },
+    {
+      name: "Parrotfish",
+      slug: "parrotfish",
+      image: "/fishes/parrotfish/parrotfish_1.webp",
+    },
+    {
+      name: "Sillago/ Whiting",
+      slug: "sillago_whiting",
+      image: "/fishes/sillago_whiting/sillago_whiting_1.webp",
+    },
+    {
+      name: "Red Mullet",
+      slug: "red_mullet",
+      image: "/fishes/red_mullet/red_mullet_1.webp",
+    },
   ];
 
   return (

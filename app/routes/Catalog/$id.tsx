@@ -1,66 +1,9 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-
-interface Fish {
-  name: string;
-  description: string;
-  images: { url: string; orientation: "horizontal" | "vertical" }[];
-}
-
-interface Fishes {
-  [key: string]: Fish;
-}
+import { fishes } from "~/assets/fish";
 
 const FishDetails = () => {
   const { id } = useParams<{ id: string }>();
-  const fishes: Fishes = {
-    barramundi: {
-      name: "Barramundi",
-      description:
-        "Barramundi is a versatile fish that can be grilled, baked, or fried. It has a mild, buttery flavor and a firm, flaky texture.",
-      images: [
-        {
-          url: "/fishes/barramundi/barramundi_1.webp",
-          orientation: "horizontal",
-        },
-        {
-          url: "/fishes/barramundi/barramundi_1.webp",
-          orientation: "horizontal",
-        },
-        {
-          url: "/fishes/barramundi/barramundi_3.webp",
-          orientation: "horizontal",
-        },
-        {
-          url: "/fishes/barramundi/barramundi_2.webp",
-          orientation: "vertical",
-        },
-        {
-          url: "/fishes/barramundi/barramundi_4.webp",
-          orientation: "vertical",
-        },
-        {
-          url: "/fishes/barramundi/barramundi_5.webp",
-          orientation: "vertical",
-        },
-      ],
-    },
-    grouper: {
-      name: "Grouper",
-      description:
-        "Grouper fillet: A delectable seafood delight with a firm texture and mild, succulent flavor. Perfect for gourmet dishes or simple grilling, our grouper fillets promise a delightful culinary experience that caters to seafood enthusiasts of all tastes.",
-      images: [
-        {
-          url: "/fishes/grouper/grouper_1.webp",
-          orientation: "vertical",
-        },
-        {
-          url: "/fishes/grouper/grouper_2.webp",
-          orientation: "vertical",
-        },
-      ],
-    },
-  };
 
   const fish = fishes?.[id as string];
   const [fullScreenImage, setFullScreenImage] = useState("");
@@ -95,28 +38,30 @@ const FishDetails = () => {
         </div>
       </div>
       <div className="py-10">
-        <div className="px-4 md:px-8 lg:px-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+        <div className="px-5 md:px-8 lg:px-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
             {(fish?.images ?? []).map((image, index) => (
               <div
                 key={index}
-                className={`w-full ${
-                  image.orientation === "horizontal"
-                    ? "h-48 md:h-96"
-                    : "h-[30rem] md:h-[50rem]"
+                className={`w-full 
                 } relative rounded-lg overflow-hidden shadow-md`}
               >
-                <img
-                  src={image.url}
-                  alt={fish?.name}
-                  className={`w-full h-full ${
-                    image.orientation === "horizontal" ? "object-center" : ""
-                  }`}
-                  style={{
-                    objectFit: "cover",
-                  }}
-                  onClick={() => handleImageClick(image.url)}
-                />
+                <div className="h-full flex flex-col justify-between">
+                  <img
+                    src={image.url}
+                    alt={image?.title}
+                    className={`w-full h-full ${
+                      image.orientation === "horizontal" ? "object-center" : ""
+                    }`}
+                    style={{
+                      objectFit: "cover",
+                    }}
+                    onClick={() => handleImageClick(image.url)}
+                  />
+                  <div className="bg-white text-black p-4">
+                    <h3 className="text-lg font-medium">{image.title}</h3>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
