@@ -148,10 +148,10 @@ export default function Home() {
               </div>
             </div>
             <div className="md:flex md:space-x-10 h-72">
-              <div className="md:w-1/2 h-full">
+              <div className="md:w-1/2 h-full grow-0">
                 <img
-                  className="h-full w-full object-cover top-0"
-                  src="ice-fish-bath.webp"
+                  className="h-full w-full object-contain top-0 px"
+                  src="/fishes/red_snapper/red_snapper_1.webp"
                   alt="count-img"
                 />
               </div>
