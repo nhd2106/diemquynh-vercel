@@ -69,7 +69,7 @@ function About() {
               <div className="md:w-1/2 h-full">
                 <img
                   className="h-full w-full"
-                  src="/ice-fish-bath.webp"
+                  src="/fishes/red_snapper/red_snapper_1.webp"
                   alt="count-img"
                 />
               </div>
@@ -112,7 +112,10 @@ function About() {
           <div className="md:flex justify-center mx-3 md:mx-10">
             <div className="md:w-1/2 ">
               <div>
-                <img src="/fish-on-ice.webp" alt="img-fish-center" />
+                <img
+                  src="/fishes/red_snapper/red_snapper_1.webp"
+                  alt="img-fish-center"
+                />
               </div>
               <div className="md:-mt-[50%]">
                 <img
