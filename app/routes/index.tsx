@@ -39,7 +39,7 @@ export default function Home() {
               seafood collection and experience the ocean's finest flavors,
               responsibly sourced and delivered to your table.
             </p>
-            <div className="space-x-5 mt-5">
+            <div className="flex items-center flex-col gap-3 justify-center  md:block space-x-0 md:space-x-5 mt-5">
               <button
                 onClick={() => navigate("/about")}
                 className="rounded-full bg-blue-500 hover:bg-blue-600 py-4 px-14"
