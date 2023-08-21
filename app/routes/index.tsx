@@ -84,11 +84,11 @@ export default function Home() {
                     <Icon size={5} color="#60a5fa" />
                   </div>
                   <h3 className="text-4xl"> {title}</h3>
-                  <div>
+                  {/* <div>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
                     excepturi placeat, illo eveniet odit aut repudiandae
                     provident laborum totam similique.
-                  </div>
+                  </div> */}
                   <button className="text-blue-400 flex space-x-1 items-center">
                     <span>Read more</span>{" "}
                     <ArrowRightIcon className="h-5 w-5" />
@@ -138,12 +138,12 @@ export default function Home() {
                   </button>
                 </div>
                 <div className="md:w-1/2 mt-5">
-                  <p>
+                  {/* <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Alias, rem optio similique provident magnam dolorum earum,
                     veniam eos consequuntur deserunt modi fuga ad cum nesciunt
                     deleniti quaerat accusamus non odio!
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -196,20 +196,16 @@ export default function Home() {
               <div>
                 <img
                   className="object-contain"
-                  src="/fishes/red_snapper/red_snapper_1.webp"
+                  src="/barramundi_home_image.webp"
                   alt="img-fish-center"
                 />
               </div>
-              <div className="md:-mt-[50%]">
-                <img
-                  className="md:w-3/4 relative "
-                  style={{
-                    border: "20px solid black",
-                    objectFit: "cover",
-                    height: "500px",
-                  }}
-                  src="/fisher_man.webp"
-                  alt="fisher-man"
+              <div className="md:-mt-[50%] w-full">
+                <video
+                  className="w-full md:w-3/4 relative object-cover h-[500px] border-[10px] md:border-[20px] border-black"
+                  src="https://res.cloudinary.com/dl54o5pzx/video/upload/v1692621632/vanthinh/video_bx5jaa.mp4"
+                  autoPlay
+                  loop
                 />
               </div>
             </div>
@@ -293,10 +289,10 @@ export default function Home() {
             <h3 data-aos="fade-right" className="text-4xl font-bold">
               BECOME OUR CUSTOMER & GET SPECIAL OFFER EVERYDAY
             </h3>
-            <p>
+            {/* <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-            </p>
+            </p> */}
             <button
               onClick={() => navigate("/contact")}
               className="px-10 py-4 rounded-full border hover:bg-black hover:bg-opacity-50"
