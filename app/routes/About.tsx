@@ -119,14 +119,9 @@ function About() {
               </div>
               <div className="md:-mt-[50%]">
                 <img
-                  className="md:w-3/4 relative "
-                  style={{
-                    border: "20px solid black",
-                    objectFit: "cover",
-                    height: "500px",
-                  }}
-                  src="/fisher_man.webp"
-                  alt="fisher-man"
+                  className="w-full md:w-3/4 relative object-cover h-[500px] border-[10px] md:border-[20px] border-black"
+                  src="https://res.cloudinary.com/dl54o5pzx/image/upload/v1692624012/vanthinh/video_voubrw.webp"
+                  alt="video-barramundi"
                 />
               </div>
             </div>

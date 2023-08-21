@@ -201,11 +201,10 @@ export default function Home() {
                 />
               </div>
               <div className="md:-mt-[50%] w-full">
-                <video
+                <img
                   className="w-full md:w-3/4 relative object-cover h-[500px] border-[10px] md:border-[20px] border-black"
-                  src="https://res.cloudinary.com/dl54o5pzx/video/upload/v1692621632/vanthinh/video_bx5jaa.mp4"
-                  autoPlay
-                  loop
+                  src="https://res.cloudinary.com/dl54o5pzx/image/upload/v1692624012/vanthinh/video_voubrw.webp"
+                  alt="video-barramundi"
                 />
               </div>
             </div>
