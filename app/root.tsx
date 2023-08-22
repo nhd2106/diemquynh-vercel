@@ -22,11 +22,27 @@ import styles from "./styles/tailwind.css";
 import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 
-export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: styles },
-  { rel: "stylesheet", href: aos },
-  { rel: "icon", href: "/favicon.ico" },
-];
+export const links: LinksFunction = () => {
+  return [
+    { rel: "stylesheet", href: styles },
+    { rel: "stylesheet", href: aos },
+    { rel: "icon", href: "/favicon.ico" },
+    { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
+    { rel: "manifest", href: "/manifest.json" },
+    {
+      rel: "icon",
+      href: "/favicon-16x16.png",
+      type: "image/png",
+      sizes: "16x16",
+    },
+    {
+      rel: "icon",
+      href: "/favicon-32x32.png",
+      type: "image/png",
+      sizes: "32x32",
+    },
+  ];
+};
 
 export const meta: MetaFunction = (context) => {
   return {
@@ -39,6 +55,8 @@ export const meta: MetaFunction = (context) => {
     "og:description": `${context?.data.companyName} Co., Ltd specializes in producing, exporting and distributing high quality dried and frozen seafood items`,
     "og:image": `https://${context?.data.domain}/${context?.data.logo}`,
     "og:url": `https://${context?.data.domain}`,
+    "msapplication-TileColor": "#da532c",
+    "theme-color": "#ffffff",
   };
 };
 
