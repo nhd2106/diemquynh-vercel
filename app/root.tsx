@@ -57,6 +57,7 @@ export const meta: MetaFunction = (context) => {
     "og:url": `https://${context?.data.domain}`,
     "msapplication-TileColor": "#da532c",
     "theme-color": "#ffffff",
+    "google-site-verification": "NWMvKALI1mH8HLOjpl8Zrx_jJOEcD7TVqCqPJYvPNCQ",
   };
 };
 
