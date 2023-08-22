@@ -88,11 +88,22 @@ export default function App() {
     });
   }, []);
 
+  const gtag = ` window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+
+ gtag('config', 'G-N6XBKS122E');`;
+
   return (
     <html lang="en">
       <head>
         <Meta />
         <Links />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-N6XBKS122E"
+        ></script>
+        <script>{gtag}</script>
       </head>
       <body>
         <Header
