@@ -122,7 +122,13 @@ export default function App() {
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-N6XBKS122E"
         ></script>
-        <script>{gtag}</script>
+        <script
+          async
+          id="gtag-init"
+          dangerouslySetInnerHTML={{
+            __html: gtag,
+          }}
+        />
       </head>
       <body>
         <Header
