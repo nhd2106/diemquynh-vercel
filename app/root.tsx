@@ -48,7 +48,7 @@ export const meta: MetaFunction = (context) => {
   return {
     charset: "utf-8",
     title: context?.data?.title ?? "DiemQuynh Seafoods",
-    description: `${context?.data.companyName} Co., Ltd  is a leading exporter of fresh and frozen seafood from Vietnam. We offer a wide range of high-quality seafood products, including shrimp, crab, lobster, clams, oysters, scallops, squid, octopus, tuna, salmon, and more. Contact us today to learn more about our products and services.`,
+    description: `${context?.data.companyName} Co., Ltd  Specializing in premium seafood, VanThinh Seafoods offers a select range of products including barramundi, grouper, red mullet, and more, sustainably sourced from Vietnam's rich marine biodiversity. Delivering quality to the USA, Europe, Australia, and the UAE. Contact us today to learn more about our products and services.`,
     viewport: "width=device-width,initial-scale=1",
     keywords: `${context?.data.keywords}`,
     "og:title": context?.data?.ogTitle ?? "DiemQuynh Seafoods",
