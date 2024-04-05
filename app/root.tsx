@@ -52,7 +52,7 @@ export const meta: MetaFunction = (context) => {
     viewport: "width=device-width,initial-scale=1",
     keywords: `${context?.data.keywords}`,
     "og:title": context?.data?.ogTitle ?? "DiemQuynh Seafoods",
-    "og:description": `${context?.data.companyName} Co., Ltd specializes in producing, exporting and distributing high quality dried and frozen seafood items`,
+    "og:description": `${context?.data.companyName} Co., Ltd  Specializing in premium seafood, VanThinh Seafoods offers a select range of products including barramundi, grouper, red mullet, and more, sustainably sourced from Vietnam's rich marine biodiversity. Delivering quality to the USA, Europe, Australia, and the UAE`,
     "og:image": `https://${context?.data.domain}/${context?.data.logo}`,
     "og:url": `https://${context?.data.domain}`,
     "msapplication-TileColor": "#da532c",
@@ -67,13 +67,12 @@ export const loader: LoaderFunction = async (context) => {
   const logo = isDQ ? "DIQ_logo.webp" : "vanthinh-logo.webp";
   const domain = isDQ ? "diemquynhseafoods.com" : "vanthinhseafoods.com";
   const companyName = isDQ ? "DiemQuynhSeafoods" : "VanThinhSeafoods";
-  const title = isDQ ? "DiemQuynh Seafoods" : "VanThinh Seafoods";
-  const ogTitle = `${
-    isDQ ? "DiemQuynh Seafood " : "Van Thinh Seafood "
-  } - Exporter of Fresh and Frozen Seafood from Vietnam`;
+  const title =
+    "VanThinh Seafoods - Premium Barramundi, Grouper, and More from Vietnam";
+  const ogTitle = `VanThinh Seafoods - Premium Barramundi, Grouper, and More from Vietnam`;
   const keywords = `${
     isDQ ? "Van Thinh Seafood" : "Diemquynh Seafood"
-  }, seafood export Vietnam, seafood supplier Vietnam, shrimp export Vietnam, crab export Vietnam, lobster export Vietnam, clams export Vietnam, oysters export Vietnam, scallops export Vietnam, squid export Vietnam, octopus export Vietnam, tuna export Vietnam, salmon export Vietnam, barramundi export Vietnam, mahi-mahi export Vietnam, swordfish export Vietnam, tilapia export Vietnam, cod export Vietnam, haddock export Vietnam, halibut export Vietnam, sardines export Vietnam, anchovies export Vietnam, mackerel export Vietnam, herring export Vietnam, caviar export Vietnam, frozen seafood Vietnam, dried seafood Vietnam`;
+  }, Vietnamese barramundi, grouper, red mullet, goldband snapper, leather jacket fish, mahi mahi, parrotfish, sillago whiting, seafood supplier, sustainable seafood`;
   return json({ logo, domain, companyName, title, keywords, ogTitle });
 };
 
