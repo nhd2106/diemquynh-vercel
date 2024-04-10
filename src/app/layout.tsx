@@ -66,6 +66,9 @@ export const metadata: Metadata = {
     description:
       "VanThinhSeafoods Co., Ltd  Specializing in premium seafood, VanThinh Seafoods offers a select range of products including barramundi, grouper, red mullet, and more, sustainably sourced from Vietnam's rich marine biodiversity. Delivering quality to the USA, Europe, Australia, and the UAE",
   },
+  verification: {
+    google: "NWMvKALI1mH8HLOjpl8Zrx_jJOEcD7TVqCqPJYvPNCQ",
+  },
 };
 
 const fontSans = FontSans({
