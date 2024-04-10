@@ -27,7 +27,6 @@ export const links: LinksFunction = () => {
     { rel: "stylesheet", href: aos },
     { rel: "icon", href: "/favicon.ico" },
     { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
-    { rel: "manifest", href: "/manifest.json" },
     {
       rel: "icon",
       href: "/favicon-16x16.png",
