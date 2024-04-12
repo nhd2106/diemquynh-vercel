@@ -78,8 +78,10 @@ const fontSans = FontSans({
 
 export default function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Record<string, string>;
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>

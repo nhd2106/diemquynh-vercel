@@ -37,17 +37,13 @@ export default function Home() {
             <div className="flex items-center flex-col gap-3 justify-center  md:block space-x-0 md:space-x-5 mt-5">
               <Link
                 href="/about"
-                className={buttonVariants({
-                  variant: "default",
-                })}
+                className="rounded-full bg-blue-500 hover:bg-blue-600 py-4 px-14"
               >
                 Read more
               </Link>
               <Link
                 href="/contact"
-                className={buttonVariants({
-                  variant: "default",
-                })}
+                className="rounded-full hover:bg-black hover:bg-opacity-40 border py-4 px-14"
               >
                 Contact
               </Link>
@@ -101,9 +97,7 @@ export default function Home() {
             <div className="flex justify-center">
               <Link
                 href="/contact"
-                className={buttonVariants({
-                  variant: "default",
-                })}
+                className="justify-center flex items-center text-blue-500 space-x-1"
               >
                 <span>Contact Our Sales</span>
                 <ArrowRightIcon className="h-5 w-5" />

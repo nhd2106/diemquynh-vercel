@@ -68,8 +68,8 @@ const FishCatalog = () => {
         className="py-20 md:py-40 lg:py-64 relative"
       >
         <div className="bg-black opacity-50 absolute top-0 left-0 h-full w-full"></div>
-        <div className="w-full md:w-2/3 lg:w-1/2 mx-auto relative z-10">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+        <div className="w-full md:w-2/3 lg:w-1/2 mx-auto relative z-10 p-2 md:p-0">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 mt-6 md:mt-0">
             Catalog
           </h1>
           <p className="text-sm md:text-xl lg:text-2xl mb-8 sm:px-4">

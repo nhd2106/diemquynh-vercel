@@ -79,7 +79,7 @@ export default function Header() {
                     </Link>
                   </div>
 
-                  {/* <Link href="/" className="lg:hidden bg-white rounded-full">
+                  <Link href="/" className="lg:hidden bg-white rounded-full">
                     <span className="sr-only">VanThinhSeafoods</span>
                     <Image
                       width={100}
@@ -88,7 +88,7 @@ export default function Header() {
                       alt="logo"
                       className="h-14 w-auto"
                     />
-                  </Link> */}
+                  </Link>
 
                   <div className="flex-1 flex items-center justify-center">
                     <div className="hidden lg:block">
@@ -117,7 +117,7 @@ export default function Header() {
                     onClick={() => setOpen(!open)}
                     variant="ghost"
                     size="icon"
-                    className=" md:hidden"
+                    className=" md:hidden text-white"
                   >
                     {open ? <XIcon /> : <MenuIcon />}
                   </Button>
