@@ -1,6 +1,6 @@
-import { CustomerIcon } from "@/components/icons";
+import { CustomerIcon, FishIcon } from "@/components/icons";
 import { buttonVariants } from "@/components/ui/button";
-import { ArrowRightIcon, CheckIcon, FishIcon, LeafIcon } from "lucide-react";
+import { ArrowRightIcon, CheckIcon, LeafIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import CountUpWrapper from "@/CountUpWrapper";
@@ -34,7 +34,7 @@ export default function Home() {
               seafood collection and experience the ocean&apos;s finest flavors,
               responsibly sourced and delivered to your table.
             </p>
-            <div className="flex items-center flex-col gap-3 justify-center  md:block space-x-0 md:space-x-5 mt-5">
+            <div className="flex items-center flex-col gap-3 justify-center  md:block space-x-0 md:space-x-5 mt-10">
               <Link
                 href="/about"
                 className="rounded-full bg-blue-500 hover:bg-blue-600 py-4 px-14"
@@ -126,7 +126,7 @@ export default function Home() {
                   <h2 data-aos="fade-right" className="text-3xl">
                     Diem Quynh Seafoods
                   </h2>
-                  <button className="bg-blue-300 px-10 py-4 rounded-full">
+                  <button className="bg-blue-300 px-10 py-4 rounded-full text-black">
                     Learn More
                   </button>
                 </div>
@@ -143,7 +143,7 @@ export default function Home() {
             <div className="md:flex md:space-x-10 h-72">
               <div className="md:w-1/2 h-full grow-0">
                 <Image
-                  className="h-full w-full object-contain top-0 px"
+                  className="h-full w-full object-cover rounded-lg top-0 px"
                   src="/fishes/red_snapper/red_snapper_1.webp"
                   alt="count-img"
                   width={500}
@@ -157,7 +157,7 @@ export default function Home() {
                     <CountUpWrapper
                       end={50}
                       duration={3}
-                      className="text-5xl font-bold"
+                      className="text-5xl font-bold "
                     />
                     <p>Fishes Type</p>
                   </div>
@@ -168,7 +168,7 @@ export default function Home() {
                     <CountUpWrapper
                       end={120}
                       duration={3}
-                      className="text-5xl font-bold"
+                      className="text-5xl font-bold "
                     />{" "}
                     <span className="absolute right-5 text-2xl">+</span>
                     <p>Customers</p>
@@ -190,16 +190,16 @@ export default function Home() {
             <div className="md:w-1/2 ">
               <div>
                 <Image
-                  className="object-contain"
+                  className="object-contain rounded-lg"
                   src="/barramundi_home_image.webp"
                   alt="img-fish-center"
                   width={500}
                   height={500}
                 />
               </div>
-              <div className="md:-mt-[50%] w-full">
+              <div className="md:-mt-[50%] w-full rounded-lg">
                 <Image
-                  className="w-full md:w-3/4 relative object-cover h-[500px] border-[10px] md:border-[20px] border-black"
+                  className="w-full md:w-3/4 relative object-cover h-[500px] border-[10px] md:border-[20px] border-black rounded-lg"
                   src="https://res.cloudinary.com/dl54o5pzx/image/upload/v1692624012/vanthinh/video_voubrw.webp"
                   alt="video-barramundi"
                   width={500}
@@ -211,7 +211,7 @@ export default function Home() {
             <div className=" md:w-1/4 md:flex flex-wrap content-start">
               <div className=" bg-white rounded-lg  text-black p-8 md:mt-5 md:-ml-[20%]">
                 <div className="space-y-5">
-                  <Link href="/about" className="text-blue-300 text-xl">
+                  <Link href="/about" className="text-blue-600 text-xl">
                     About Us
                   </Link>
                   <h3 data-aos="fade-right" className="text-4xl font-bold">
@@ -290,10 +290,6 @@ export default function Home() {
             <h3 data-aos="fade-right" className="text-4xl font-bold">
               BECOME OUR CUSTOMER & GET SPECIAL OFFER EVERYDAY
             </h3>
-            {/* <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-          </p> */}
             <Link
               href={"/contact"}
               className={buttonVariants({
@@ -367,7 +363,7 @@ export default function Home() {
                   <h3 className="text-lg md:text-xl">{productName}</h3>
                   <Link
                     href={slug}
-                    className="text-blue-300 flex items-center space-x-2"
+                    className="text-blue-500 flex items-center space-x-2"
                   >
                     <span>View product</span>
                     <ArrowRightIcon className="w-5 h-5" />

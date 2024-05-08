@@ -49,7 +49,7 @@ function About() {
                   <h2 data-aos="fade-right" className="text-3xl">
                     Diem Quynh Seafoods
                   </h2>
-                  <button className="bg-blue-300 px-10 py-4 rounded-full">
+                  <button className="bg-blue-300 px-10 py-4 rounded-full text-black">
                     Learn More
                   </button>
                 </div>

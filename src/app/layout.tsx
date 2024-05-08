@@ -11,8 +11,6 @@ export const viewport: Viewport = {
   initialScale: 1,
   width: "device-width",
   height: "device-height",
-  minimumScale: 1,
-  maximumScale: 1,
 };
 
 export const metadata: Metadata = {
@@ -93,9 +91,9 @@ export default function RootLayout({
         )}
         suppressHydrationWarning={true}
       >
-        <Header />
+        {children && <Header />}
         <main className="">{children}</main>
-        <Footer />
+        {children && <Footer />}
       </body>
       <GoogleAnalytics gaId="G-N6XBKS122E" />
     </html>

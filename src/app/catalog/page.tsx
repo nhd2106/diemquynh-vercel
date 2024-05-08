@@ -1,4 +1,5 @@
 import { blurDataURL } from "@/assets/config";
+import { LayoutGrid } from "@/components/ui/layout-grid";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -83,9 +84,20 @@ const FishCatalog = () => {
           </p>
         </div>
       </div>
-      <div className="py-10">
+      <div className="py-10 h-screen">
+        <LayoutGrid
+          cards={fishes.map((fish, index) => ({
+            className: index % 2 === 0 ? "col-span-1" : "col-span-2",
+            thumbnail: fish.image
+              ? fish.image
+              : `https://source.unsplash.com/400x400/?${fish.name}`,
+            url: `/catalog/${fish.slug}`,
+            id: index,
+            content: fish.name,
+          }))}
+        />
         {/* create fishes catalogs with tailwinds css */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 md:px-8 lg:px-16">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 md:px-8 lg:px-16">
           {fishes.map((fish) => (
             <Link key={fish.slug} href={`/catalog/${fish.slug}`}>
               <div className="w-full h-48 relative">
@@ -110,7 +122,7 @@ const FishCatalog = () => {
               </div>
             </Link>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
